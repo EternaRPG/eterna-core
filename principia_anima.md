@@ -6,6 +6,7 @@ A game only truly comes to life when it is owned, shaped, and expanded by its pl
 ## Play must be boundless and welcoming.
 
 Inclusivity and accessibility are non-negotiable. Anima must be open in every sense—open to interpretation, open to creativity, and open to everyone who wants to play. The rules must always be accessible and free, and the stories must be welcoming to all, regardless of experience or background. Whether you’re a seasoned gamer or new to roleplaying, the game must feel like a space where your ideas and contributions matter. 
+
 ## Creativity deserves its just reward.
 
 Whether crafting new mechanics, contributing artwork, translating for the world, weaving intricate narratives, or just fixing typos, the Anima community's creative efforts must be celebrated, supported, and most of all, **paid**.  
@@ -23,7 +24,12 @@ A game doesn't need a labyrinth of rules to be engaging or meaningful. Instead, 
 Cohesive vision is better than mechanical bloat. The core principles must be flexible enough to accommodate new ideas and unexpected situations, allowing creativity to thrive without losing coherence. The craziest stunts may be attempted; the most imaginative spells can be improvised - and the system must tell you exactly how it should work.  
 
 Anima’s cosmology—the Great Circle—isn’t just one world of sword and sorcery. It’s a multiverse of infinite possibilities, where every world can be shaped and governed differently by the same fundamental principles. If you have the skill and the courage, the canvas is there for you to craft entire new worlds within the Circle.  
-The rules must support your imagination, not constrain it.  
+The rules must support your imagination, not constrain it.
+
+## Complexity must grow from clarity.
+
+The rules must be simple enough to learn quickly, yet coherent enough to support deep, modular complexity. Every mechanic is built to be expanded—never replaced.
+You must be able to start with the basics—attacking, defending, using Animus, and navigating the Great Circle—and build from there. The core system already includes rules for armour, injury and more, but the same principles must scale smoothly to support everything from sieges to spaceflight, without ever losing coherence.
 
 ## All roads need maps, not just the warrior’s path.
 
