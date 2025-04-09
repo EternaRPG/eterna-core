@@ -2,7 +2,7 @@
 
 This document defines a minimal extension to Gherkin syntax for modeling finite state machines (FSMs) using valid Gherkin structure. It prioritizes human readability, tooling compatibility, and structured stateful behavior.
 
-## 🌟 Purpose
+## 🎯 Purpose
 
 Use Gherkin to express game rule logic as state transitions, enabling simulation, validation, and interactive flow modeling.
 
@@ -12,7 +12,21 @@ Use Gherkin to express game rule logic as state transitions, enabling simulation
 
 All syntax is valid Gherkin and can be parsed by standard tools, while being interpreted as FSM logic by custom engines.
 
-### 1. `@from:<state>`
+### 1. `@start`
+
+Declares the **single** FSM entrypoint.
+
+```gherkin
+@start
+Scenario: Begin gameplay
+  Then :initialize_game
+```
+
+There must be exactly one `@start` scenario per FSM.
+
+---
+
+### 2. `@from:<state>`
 
 Declares one or more origin states for a transition.
 
@@ -23,7 +37,7 @@ Declares one or more origin states for a transition.
 
 ---
 
-### 2. `Given :<truthy_guard>`
+### 3. `Given :<truthy_guard>`
 
 Declares a required condition or flag for the scenario to apply.
 
@@ -37,7 +51,7 @@ And :dice_pools_ready
 
 ---
 
-### 3. `Then :<next_state> Else :<fallback_state>`
+### 4. `Then :<next_state> Else :<fallback_state>`
 
 Declares a conditional binary transition:
 
@@ -48,6 +62,18 @@ Then :success Else :failure
 - If all `Given` conditions pass, the FSM transitions to `success`.
 - Otherwise, it transitions to `failure`.
 - This avoids needing duplicated `Scenario` blocks for each branch.
+
+---
+
+### 5. `Then :END`
+
+Marks a terminal state.
+
+```gherkin
+Then :END
+```
+
+This halts execution or exits the FSM cleanly.
 
 ---
 
@@ -64,11 +90,19 @@ Then :success Else :failure
 ## 🔧 Example
 
 ```gherkin
-@from:resolution_phase
-Scenario: Resolve contested dice outcome
-  Given :dice_pools_ready
-  And :player_has_success
-  Then :victory Else :defeat
+@start
+Scenario: Begin play
+  Given :scene_is_active
+  Then :player_turn
+
+@from:player_turn
+Scenario: Player acts
+  Given :player_has_animus
+  Then :success Else :failure
+
+@from:success
+Scenario: End of flow
+  Then :END
 ```
 
 ---
@@ -76,6 +110,7 @@ Scenario: Resolve contested dice outcome
 ## 💡 Parser Notes
 
 A custom FSM engine should:
-- Track state via `@from:` and `Then`
+- Track state via `@start`, `@from:` and `Then`
 - Interpret `:flag` steps as guard conditions
 - Handle ternary transitions using `Then :X Else :Y`
+- Recognize `Then :END` as a terminal state
