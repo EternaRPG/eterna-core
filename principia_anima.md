@@ -17,6 +17,11 @@ Secondly, Anima requires a license that allows the community to build, share, an
 
 Finally, we acknowledge the role of AI in filling in the gaps where a human artist or writer can't be found. However, the community must decide how we recognise and treat AI-generated content and use our resources to replace it with the infinitely more valuable contributions of real artists.
 
+## Words have power.
+The language of the rules must be as intuitive and evocative as the world they describe. Terms should feel natural in conversation, vivid in play, and meaningful in context. We must avoid a glossary of cold acronyms or clinical shorthand. Instead, mechanics are named to reflect their narrative and emotional weight.
+
+Evocative language is immersive by default: when the words match the fiction, the rules become part of the story. If the mechanics are named well, declaring your action should sound like casting a spell.
+
 ## The rules of the world are your guide. The world of the rules is your inspiration.
 
 A game doesn't need a labyrinth of rules to be engaging or meaningful. Instead, it needs a coherent and consistent understanding of the world it inhabits. Anima's design must be predicated on simple, elegant concepts that form the backbone of gameplay. From these foundational ideas, complex, emergent stories and gameplay will arise naturally.
