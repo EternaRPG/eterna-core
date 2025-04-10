@@ -1,5 +1,6 @@
 from agentpy import Model, Grid
 from anima_agent import AnimaAgent
+from anima_entity import AnimaEntity
 
 class AnimaModel(Model):
     def __init__(self, width=10, height=10):
@@ -12,17 +13,11 @@ class AnimaModel(Model):
         """ Initiate a list of new agents. """
         pass
 
-    def step(self):
-        """ Call a method for every agent. """
-        pass
-
-    def update(self):
-        """ Record a dynamic variable. """
-        pass
-
-    def end(self):
-        """ Repord an evaluation measure. """
-        pass
+    def spawn_agent(self, entity: AnimaEntity = AnimaEntity(), position: tuple = (0, 0)):
+            """ Creates an agent with a given entity and places it on the grid. """
+            agent = AnimaAgent(self, p={'entity': entity})  # Pass the entity as a parameter
+            self.env.add_agents([agent],[position])  # Store the agent in the model
+            return agent
 
 class AnimaTerrain(Grid):
     def __init__(self, model, shape, torus=False):
