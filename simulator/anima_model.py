@@ -14,9 +14,9 @@ class AnimaModel(Model):
         pass
 
     def spawn_agent(self, entity: AnimaEntity = AnimaEntity(), position: tuple = (0, 0)):
-            """ Creates an agent with a given entity and places it on the grid. """
-            agent = AnimaAgent(self, p={'entity': entity})  # Pass the entity as a parameter
-            self.env.add_agents([agent],[position])  # Store the agent in the model
+            # """ Creates an agent with a given entity and places it on the grid. """
+            # agent = self.env.add_agents(AnimaAgent(self.model, ), 1, {'entity': entity}, positions=[position])[0]
+            agent = self.env.add_agents([AnimaAgent(self.model, entity=entity)], [position])
             return agent
 
 class AnimaTerrain(Grid):
