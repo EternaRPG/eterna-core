@@ -58,7 +58,7 @@ Please see the respective license files for detailed terms.
 
 The Eterna system and settings are stewarded by the [Eterna Collective](https://opencollective.com/eterna), supported by Great Circle IP Ltd.
 
-Ownership of the core intellectual property has been formally assigned to Great Circle IP Ltd to ensure its preservation and ethical stewardship.
+While Great Circle IP Ltd holds formal ownership of the Ennà setting, stewardship and creative power belong permanently to the Eterna Collective through an irrevocable license.
 
 Original signed IP assignment documents are available [here](https://github.com/EternaRPG/eterna-governance) and publicly verifiable.
 
