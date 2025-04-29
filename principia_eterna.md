@@ -1,13 +1,13 @@
 # Principia Anima
 
-## A game belongs to those who play it.
+## Games belong to those who play.
 
 A game only truly comes to life when it is owned, shaped, and expanded by its players. The community must have the tools and freedom to create, adapt, and make a game their own. Anima must grow through the contributions and creativity of those who love it. The core system must be open-source and must always be free. Every spell, weapon, ability, location, and other core element added to the main repository must always be freely available to everyone.
 ## Play must be boundless and welcoming.
 
 Inclusivity and accessibility are non-negotiable. Anima must be open in every sense—open to interpretation, open to creativity, and open to everyone who wants to play. The rules must always be accessible and free, and the stories must be welcoming to all, regardless of experience or background. Whether you’re a seasoned gamer or new to roleplaying, the game must feel like a space where your ideas and contributions matter.
 
-## Creativity deserves its just reward.
+## Creativity deserves reward.
 
 Whether crafting new mechanics, contributing artwork, translating for the world, weaving intricate narratives, or just fixing typos, the Anima community's creative efforts must be celebrated, supported, and most of all, **paid**.
 
